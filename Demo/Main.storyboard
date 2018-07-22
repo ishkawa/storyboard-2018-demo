@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本橋人形町" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho9-CS-epu" customClass="TitleLabel" customModule="DemoUI">
+                                <rect key="frame" x="22" y="44" width="180" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-L7-3tV" customClass="BodyLabel" customModule="DemoUI">
+                                <rect key="frame" x="24" y="125.5" width="327" height="335.5"/>
+                                <mutableString key="text">日本橋人形町(にほんばしにんぎょうちょう)は、東京都中央区の地名で、旧日本橋区にあたる日本橋地域内である。現行行政地名は日本橋人形町一丁目から日本橋人形町三丁目。郵便番号は103-0013。
+
+江戸時代、堺町と葺屋町が現在の日本橋人形町三丁目の人形町通り西側にあり、歌舞伎小屋の中村座と市村座があった。また、薩摩浄瑠璃(薩摩座)や人形芝居(結城座)も行われていた。一般には人形遣いが多く住んでいたから人形町と名付けられたとされている。江戸時代においては、人形町は通りの名で大坂町、島町、住吉町、和泉町、堺町、芳町がこの通りに面していたが、1933年(昭和8年)に正式にこれらの町名が「人形町」という町名に変更された。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東京都中央区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQk-3H-ZUs" customClass="InfoLabel" customModule="DemoUI">
+                                <rect key="frame" x="25" y="84.5" width="79" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-TB-JBG" customClass="PrimaryActionButton" customModule="DemoUI">
+                                <rect key="frame" x="110.5" y="587" width="155" height="48"/>
+                                <state key="normal" title="この街に行く"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HOB-TB-JBG" secondAttribute="bottom" constant="32" id="561-bY-aij"/>
+                            <constraint firstItem="Ho9-CS-epu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="77C-vO-yUE"/>
+                            <constraint firstItem="Ho9-CS-epu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="HEj-XB-hRm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pdB-L7-3tV" secondAttribute="trailing" constant="24" id="Zbw-vw-rl2"/>
+                            <constraint firstItem="zQk-3H-ZUs" firstAttribute="leading" secondItem="Ho9-CS-epu" secondAttribute="leading" constant="2.5" id="e9U-fX-1iQ"/>
+                            <constraint firstItem="pdB-L7-3tV" firstAttribute="top" secondItem="zQk-3H-ZUs" secondAttribute="bottom" constant="24" id="pMT-Lh-sCg"/>
+                            <constraint firstItem="pdB-L7-3tV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qWu-0T-gHV"/>
+                            <constraint firstItem="HOB-TB-JBG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="udj-7r-aqJ"/>
+                            <constraint firstItem="zQk-3H-ZUs" firstAttribute="top" secondItem="Ho9-CS-epu" secondAttribute="bottom" constant="2" id="yPv-MZ-jBP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
